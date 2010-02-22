@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Simple Water Mark</title>
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js'></script>
+	<script type='text/javascript' src='jquery.simple-watermark.pack.js'></script>
+<style type='text/css'>
+.watermark {
+	color: gray;
+}
+</style>
+</head>
+<body>
+
+<!--
+Simple Water Mark
+July 18, 2009
+Corey Hart @ http://www.codenothing.com
+-->
+
+<h1>Simple Water Mark</h1>
+
+<p style='font-size:9pt;'>
+Simple water mark gives users an unobtrusive information about the textbox/textarea.<br>
+It's only a couple of lines, and uses CSS instead of images for messages.
+</p>
+
+<pre style='margin: 40px 0;'>
+$(document).ready(function(){
+	$('input[type=text], textarea').simpleWaterMark('watermark');
+});
+</pre>
+
+<script type='text/javascript'>
+$(document).ready(function(){
+	$('input[type=text], textarea').simpleWaterMark('watermark');
+});
+</script>
+
+
+Input Box:<br>
+<input type='text' size='25' title='Input Message Here' /><br>
+<br><br>
+Text Box:<br>
+<textarea cols='30' rows='10' title='Textarea Message Here'></textarea>
+
+
+</body>
+</html>
