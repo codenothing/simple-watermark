@@ -1,6 +1,6 @@
 /*
- * Simple Watermark [VERSION]
- * [DATE]
+ * Simple Watermark 1.1
+ * April 19, 2010
  * Corey Hart @ http://www.codenothing.com
  */
 (function( $, window ){
