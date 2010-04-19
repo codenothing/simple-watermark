@@ -78,7 +78,7 @@
 		});
 	};
 
-	// Tell the plugin to use native HTML5 placeholder attribute instead if availiable
+	// Tell the plugin to use native HTML5 placeholder attribute instead if available
 	$.fn.simpleWaterMark.HTML5 = true;
 
 	// Remove the title attribute after events are bound (so it doesn't pop up on hover)
