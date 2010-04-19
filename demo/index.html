@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Simple Water Mark [VERSION]</title>
+	<title>Simple Watermark [VERSION]</title>
 	<script type='text/javascript' src='../jquery/jquery-1.4.2.js'></script>
 	<script type='text/javascript' src='../src/jquery.simple-watermark.js'></script>
 <style type='text/css'>
@@ -12,12 +13,12 @@
 <body>
 
 <!--
-Simple Water Mark [VERSION]
+Simple Watermark [VERSION]
 [DATE]
 Corey Hart @ http://www.codenothing.com
 -->
 
-<h1>Simple Water Mark [VERSION]</h1>
+<h1>Simple Watermark [VERSION]</h1>
 
 <p style='font-size:9pt;'>
 Simple water mark gives users an unobtrusive information about the textbox/textarea.<br>
@@ -32,16 +33,16 @@ $(document).ready(function(){
 
 <script type='text/javascript'>
 jQuery(function( $ ){
-	console.warn( $('input[type=text], textarea').simpleWaterMark('watermark') );
+	$('input[type=text], textarea').simpleWaterMark('watermark');
 });
 </script>
 
 
 Input Box:<br>
-<input type='text' size='25' title='Input Message Here' /><br>
+<input type='text' size='25' placeholder='Input Message Here' /><br>
 <br><br>
 Text Box:<br>
-<textarea cols='30' rows='10' title='Textarea Message Here'></textarea>
+<textarea cols='30' rows='10' placeholder='Textarea Message Here'></textarea>
 
 
 

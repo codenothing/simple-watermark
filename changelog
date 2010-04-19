@@ -1,0 +1,11 @@
+###
+### Simple Watermark [VERSION] Change Log
+### [DATE]
+### Corey Hart @ http://www.codenothing.com
+###
+
+# New Features
+-Checks for native HTML5 placeholder capabilities first before implementing events
+-Storing strings in the placeholder attribute will be used over the title attribute
+-By default, the title attribute is removed after plugin initiation, to get rid of the native browser title hover bar
+-Now preventing multiple initializations of the watermark plugin on the same element (storing data on simple-watermark data namespace)

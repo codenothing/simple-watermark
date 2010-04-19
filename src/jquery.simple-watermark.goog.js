@@ -1,7 +1,7 @@
 /*
- * Simple Water Mark [VERSION]
+ * Simple Watermark [VERSION]
  * [DATE]
  * Corey Hart @ http://www.codenothing.com
  */
-(function(c,g){var h="placeholder"in document.createElement("input");c.fn.simpleWaterMark=function(i){return this.each(function(){var a=c(this),e=a.attr("placeholder"),b=this.title,f=e&&e!=="",d=c.metadata&&a.metadata().watermark?a.data(c.metadata.defaults.single).watermark:i;if(h&&c.fn.simpleWaterMark.force===false)f||a.attr("placeholder",b);else{if(f)b=e;a.val()==""&&b&&b!==""&&a.addClass(d).val(b);a.bind({"focus.simple-watermark":function(){console.log("focused");a.removeClass(d).val("")},"blur.simple-watermark":function(){a.val()===
-""&&b&&b!==""&&a.addClass(d).val(b)}}).closest("form").bind("submit.simple-watermark",function(){a.hasClass(d)&&a.val("")});c(g).bind("unload.simple-watermark",function(){a.removeClass(d).val("")})}})};c.fn.simpleWaterMark.force=false})(jQuery,window);
+(function(b,h){b.fn.simpleWaterMark=function(i){return this.each(function(){var d=this,a=b(d),c=d.title,f=d.placeholder||"",g=f&&f!=="",e=b.metadata?a.metadata().watermark:i;if(b.fn.simpleWaterMark.removeTitle===true)d.title="";if(b.fn.simpleWaterMark.HTML5===true&&"placeholder"in d){if(!g)d.placeholder=c}else{if(g)c=f;a.val()===""&&c&&c!==""&&a.addClass(e).val(c);a.bind({"focus.simple-watermark":function(){a.hasClass(e)&&a.removeClass(e).val("")},"blur.simple-watermark":function(){a.val()===""&&
+c&&c!==""&&a.addClass(e).val(c)}}).closest("form").bind("submit.simple-watermark",function(){a.hasClass(e)&&a.val("")});b(h).bind("unload.simple-watermark",function(){a.val("")})}})};b.fn.simpleWaterMark.HTML5=true;b.fn.simpleWaterMark.removeTitle=true})(jQuery,window);
