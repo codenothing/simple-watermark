@@ -18,8 +18,8 @@
 		return this.each(function(){
 			var self = this,
 				$input = $( self ),
-				title = self.getAttribute( 'title' ),
-				inplace = self.getAttribute( 'placeholder' ),
+				title = self.getAttribute( 'title' ) || '',
+				inplace = self.getAttribute( 'placeholder' ) || '',
 				useinplace = !!( inplace && inplace !== '' ),
 				css = $.metadata ? $input.metadata().watermark : mainCSS;
 
