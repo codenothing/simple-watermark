@@ -36,7 +36,7 @@
 
 			// If browser is HTML5 compatible, use native placeholder
 			if ( $.fn.simpleWaterMark.HTML5 === true && placeholder[ self.nodeName.toLowerCase() ] ) {
-				if ( ! useinplace ) {
+				if ( ! useinplace  && title != null ) {
 					self.placeholder = title;
 				}
 				return;
